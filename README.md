@@ -14,7 +14,13 @@
 
 4、终端执行：`carthage build --no-skip-current`
 
-## 三、Git 操作
+## 三、carthage 安装
+
+Cartfile 文件中添加 `github "wanggw911/CHMarco"`
+
+终端执行：`carthage update --platform iOS`
+
+## 四、Git 操作
 
 提交：
 
@@ -29,7 +35,7 @@ git push -u origin master
 打 tag
 
 ```
-git tag -a v1.0.0 -m '版本信息'
+git tag -a v1.0.0 -m '初始版本'
 git push origin --tags
 ```
 
