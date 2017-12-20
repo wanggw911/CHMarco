@@ -48,6 +48,14 @@
     #define NSLog(...)
 #endif
 
+// 控制台输出不完整的完美解决：CHLog
+// 解决方案来自： https://www.cnblogs.com/Rong-Shengcom/p/7851060.html
+#ifdef DEBUG
+#define CHLog(s, ... ) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String] )
+#else
+#define CHLog(s, ... )
+#endif
+
 
 //----  自定义：TODO
 #define STRINGIFY(S) #S
