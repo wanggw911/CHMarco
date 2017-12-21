@@ -30,6 +30,7 @@
 
 
 #define kView_Of_NIB(x)             [[[NSBundle mainBundle] loadNibNamed:x owner:self options:nil] lastObject]
+#define kNib(x)                     [UINib nibWithNibName:x bundle:nil]
 
 #define kStoryboard_Main            [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]
 #define kController_of_MainSB(x)    [kStoryboard_Main instantiateViewControllerWithIdentifier:x]
