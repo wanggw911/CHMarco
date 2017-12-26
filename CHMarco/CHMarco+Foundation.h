@@ -1,13 +1,13 @@
 //
-//  AppMarco+Foundation.h
+//  CHMarco+Foundation.h
 //  CHMarco
 //
 //  Created by GuowenWang on 2017/3/7.
 //  Copyright © 2017年 GuowenWang. All rights reserved.
 //
 
-#ifndef AppMarco_Foundation_h
-#define AppMarco_Foundation_h
+#ifndef CHMarco_Foundation_h
+#define CHMarco_Foundation_h
 
 
 
@@ -92,4 +92,4 @@
 
 
 
-#endif /* AppMarco_Foundation_h */
+#endif /* CHMarco_Foundation_h */

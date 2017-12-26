@@ -1,6 +1,6 @@
 //
-//  Constants+Inline.h
-//  Collect_Category
+//  CHConstants+Inline.h
+//  CHMarco
 //
 //  Created by GuowenWang on 2016/11/25.
 //  Copyright © 2016年 GuowenWang. All rights reserved.

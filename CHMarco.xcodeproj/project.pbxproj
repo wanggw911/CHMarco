@@ -23,10 +23,10 @@
 
 /* Begin PBXBuildFile section */
 		6D382C221FE1218F00A28BEC /* CHMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D382C201FE1218F00A28BEC /* CHMarco.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D577E271FE24C9C0048FA90 /* AppMarco+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E241FE24C9C0048FA90 /* AppMarco+Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D577E281FE24C9C0048FA90 /* AppMarco+Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E251FE24C9C0048FA90 /* AppMarco+Foundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D577E291FE24C9C0048FA90 /* AppMarco+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E261FE24C9C0048FA90 /* AppMarco+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D577E351FE269270048FA90 /* Constants+Inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E341FE269260048FA90 /* Constants+Inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D577E271FE24C9C0048FA90 /* CHMarco+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E241FE24C9C0048FA90 /* CHMarco+Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D577E281FE24C9C0048FA90 /* CHMarco+Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E251FE24C9C0048FA90 /* CHMarco+Foundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D577E291FE24C9C0048FA90 /* CHMarco+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E261FE24C9C0048FA90 /* CHMarco+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D577E351FE269270048FA90 /* CHConstants+Inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D577E341FE269260048FA90 /* CHConstants+Inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +43,10 @@
 		6D382C1D1FE1218F00A28BEC /* CHMarco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHMarco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D382C201FE1218F00A28BEC /* CHMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMarco.h; sourceTree = "<group>"; };
 		6D382C211FE1218F00A28BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D577E241FE24C9C0048FA90 /* AppMarco+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppMarco+Tools.h"; sourceTree = "<group>"; };
-		6D577E251FE24C9C0048FA90 /* AppMarco+Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppMarco+Foundation.h"; sourceTree = "<group>"; };
-		6D577E261FE24C9C0048FA90 /* AppMarco+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppMarco+UIKit.h"; sourceTree = "<group>"; };
-		6D577E341FE269260048FA90 /* Constants+Inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Constants+Inline.h"; sourceTree = "<group>"; };
+		6D577E241FE24C9C0048FA90 /* CHMarco+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHMarco+Tools.h"; sourceTree = "<group>"; };
+		6D577E251FE24C9C0048FA90 /* CHMarco+Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHMarco+Foundation.h"; sourceTree = "<group>"; };
+		6D577E261FE24C9C0048FA90 /* CHMarco+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHMarco+UIKit.h"; sourceTree = "<group>"; };
+		6D577E341FE269260048FA90 /* CHConstants+Inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHConstants+Inline.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,10 @@
 			children = (
 				6D382C211FE1218F00A28BEC /* Info.plist */,
 				6D382C201FE1218F00A28BEC /* CHMarco.h */,
-				6D577E241FE24C9C0048FA90 /* AppMarco+Tools.h */,
-				6D577E261FE24C9C0048FA90 /* AppMarco+UIKit.h */,
-				6D577E251FE24C9C0048FA90 /* AppMarco+Foundation.h */,
-				6D577E341FE269260048FA90 /* Constants+Inline.h */,
+				6D577E241FE24C9C0048FA90 /* CHMarco+Tools.h */,
+				6D577E261FE24C9C0048FA90 /* CHMarco+UIKit.h */,
+				6D577E251FE24C9C0048FA90 /* CHMarco+Foundation.h */,
+				6D577E341FE269260048FA90 /* CHConstants+Inline.h */,
 			);
 			path = CHMarco;
 			sourceTree = "<group>";
@@ -97,10 +97,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D382C221FE1218F00A28BEC /* CHMarco.h in Headers */,
-				6D577E271FE24C9C0048FA90 /* AppMarco+Tools.h in Headers */,
-				6D577E291FE24C9C0048FA90 /* AppMarco+UIKit.h in Headers */,
-				6D577E281FE24C9C0048FA90 /* AppMarco+Foundation.h in Headers */,
-				6D577E351FE269270048FA90 /* Constants+Inline.h in Headers */,
+				6D577E271FE24C9C0048FA90 /* CHMarco+Tools.h in Headers */,
+				6D577E291FE24C9C0048FA90 /* CHMarco+UIKit.h in Headers */,
+				6D577E281FE24C9C0048FA90 /* CHMarco+Foundation.h in Headers */,
+				6D577E351FE269270048FA90 /* CHConstants+Inline.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

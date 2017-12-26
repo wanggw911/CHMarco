@@ -1,13 +1,13 @@
 //
-//  AppMarco+Tools.h
+//  CHMarco+Tools.h
 //  CHMarco
 //
 //  Created by GuowenWang on 2017/3/7.
 //  Copyright © 2017年 GuowenWang. All rights reserved.
 //
 
-#ifndef AppMarco_Tools_h
-#define AppMarco_Tools_h
+#ifndef CHMarco_Tools_h
+#define CHMarco_Tools_h
 
 
 
@@ -103,4 +103,4 @@ _Pragma("clang diagnostic pop") \
 
 
 
-#endif /* AppMarco_Tools_h */
+#endif /* CHMarco_Tools_h */

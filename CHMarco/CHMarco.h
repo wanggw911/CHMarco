@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char TestVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Test/PublicHeader.h>
 
-#import <CHMarco/AppMarco+UIKit.h>
-#import <CHMarco/AppMarco+Foundation.h>
-#import <CHMarco/AppMarco+Tools.h>
-#import <CHMarco/Constants+Inline.h>
+#import <CHMarco/CHMarco+UIKit.h>
+#import <CHMarco/CHMarco+Foundation.h>
+#import <CHMarco/CHMarco+Tools.h>
+#import <CHMarco/CHConstants+Inline.h>
