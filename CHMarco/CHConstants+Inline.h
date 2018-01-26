@@ -7,8 +7,7 @@
 //
 
 
-//#param mark - App Functions
-
+// MARK: - App Functions
 
 static inline void CH_App_MakeACall(NSString *phoneNum) {
     NSString *phoneUrl = [NSString stringWithFormat:@"tel://%@", phoneNum];
@@ -54,7 +53,7 @@ static inline void CH_App_CopyString(NSString *string) {
     pasteboard.string = string;
 }
 
-//#param mark - Thread
+// MARK: - Thread
 
 static inline void CH_RunOnMainThread(void(^doSomeThing)()) {
     if ([NSThread isMainThread]) {
@@ -66,7 +65,7 @@ static inline void CH_RunOnMainThread(void(^doSomeThing)()) {
 }
 
 
-//#param mark - Dispatch
+// MARK: - Dispatch
 
 static inline void CH_DelayDo(NSTimeInterval dalayInSeconds, void(^doSomeThing)()) {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(dalayInSeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -75,7 +74,7 @@ static inline void CH_DelayDo(NSTimeInterval dalayInSeconds, void(^doSomeThing)(
 }
 
 
-//#param mark - Alert
+// MARK: - Alert
 
 static inline void CH_WarnAlert(NSString *message) {
     UIViewController *viewController = [[UIApplication sharedApplication].delegate window].rootViewController;
@@ -95,7 +94,7 @@ static inline void CH_WarnAlertIn(UIViewController *viewController, NSString *me
 }
 
 
-//#param mark - Encrypt
+// MARK: - Encrypt
 
 static inline NSString * CH_SSKeychainService() {
     return [[NSBundle mainBundle] bundleIdentifier];
@@ -193,7 +192,7 @@ static inline NSString * CH_EncryptPayKey() {
 }
 
 
-//#param mark - String Opearation
+// MARK: - String Opearation
 
 static inline NSString * CH_StringByTrimingAllWhitespace(NSString *string) {
     return [string stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -325,8 +324,17 @@ static inline NSString * CH_FormatUserBankCardNumber(NSString *bankCardNum) {
     return newString;
 }
 
+// MARK: - Array Log OnlyOne
 
-//#param mark - Object -> JsonString
+static inline void CH_LogArrayFirstElement(NSArray *array) {
+    if (array.count == 0) {
+        NSLog(@"⚠️⚠️⚠️：数组为空，无法打印第一个！");
+        return;
+    }
+    NSLog(@"\n\n======\n数组第一个元素：%@\n======\n", array[0]);
+}
+
+// MARK: - Object -> JsonString
 
 static inline NSString * CH_ObjectConvertToJsonString(id obj) {
     if (!obj) {
@@ -340,7 +348,7 @@ static inline NSString * CH_ObjectConvertToJsonString(id obj) {
     return string ? string : @"";
 }
 
-//#param mark - JsonString -> Dictionary
+// MARK: - JsonString -> Dictionary
 
 static inline NSDictionary * CH_JsonConvertToDictionary(NSString *jsonString) {
     if (!jsonString) {
@@ -357,7 +365,7 @@ static inline NSDictionary * CH_JsonConvertToDictionary(NSString *jsonString) {
     return nil;
 }
 
-//#param mark - JsonString -> Array
+// MARK: - JsonString -> Array
 
 static inline NSArray * CH_JsonConvertToArray(NSString *jsonString) {
     if (!jsonString) {
