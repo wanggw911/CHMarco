@@ -4,7 +4,7 @@
 
 一些自己建的方便编程的宏以及一些全局的内联函数
 
-## 二、carthage 安装
+## 二、Carthage 安装
 
 Cartfile 文件中添加 `github "wanggw911/CHMarco"`
 

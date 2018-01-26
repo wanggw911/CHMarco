@@ -10,8 +10,7 @@
 #define CHMarco_Tools_h
 
 
-
-//---- Tools
+// MARK: - Tools
 #define kSafetyObj(obj)             ((NSNull *)(obj) == [NSNull null] ? nil : (obj))
 #define kCheckNull(obj)             ((obj) == [NSNull null] || ([(obj) isKindOfClass:[NSString class]] && [(obj) isEqualToString:@""])) ? nil : (obj)
 
@@ -19,7 +18,7 @@
 #define kLocalizedString(key)       NSLocalizedString(key, nil)
 
 
-//---- 本地存储
+// MARK: - 本地存储
 #define kUserDefaults               [NSUserDefaults standardUserDefaults]
 #define kSetValueKey(value,key)     { \
                                         [kUserDefaults setValue:value forKey:key];\
@@ -31,7 +30,7 @@
 #define kGetIntegerWithKey(key)     [kUserDefaults integerForKey:key]
 
 
-//----  获取时间间隔
+// MARK: - 获取时间间隔
 #define kTime_Start                 CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
 #define kTime_EndAndLog             NSLog(@"____________Time Cost: %f", CFAbsoluteTimeGetCurrent() - start);
 
@@ -41,13 +40,23 @@
 #define kFIXME(message)             // FIXME: message
 
 
-//---- 调试
+// MARK: - 调试工具
+
+// MARK: 基础打印
 #ifdef DEBUG
     #define NSLog(...) NSLog(__VA_ARGS__)
 #else
     #define NSLog(...)
 #endif
 
+// MARK: 换行打印
+#ifdef DEBUG
+#define CHLogln(s, ...) printf("\n========================\n%s\n========================\n\n", [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String])
+#else
+#define CHLogln(s, ...)
+#endif
+
+// MARK: 全部打印
 // 控制台输出不完整的完美解决：CHLog
 // 解决方案来自： https://www.cnblogs.com/Rong-Shengcom/p/7851060.html
 #ifdef DEBUG
@@ -57,7 +66,7 @@
 #endif
 
 
-//----  自定义：TODO
+// MARK: - 自定义：TODO
 #define STRINGIFY(S) #S
 #define DEFER_STRINGIFY(S) STRINGIFY(S)
 #define PRAGMA_MESSAGE(MSG) _Pragma(STRINGIFY(message(MSG)))
@@ -68,14 +77,14 @@
 #define TODO(MSG) KEYWORDIFY PRAGMA_MESSAGE(FORMATTED_MESSAGE(MSG))  // 使用方式：@TODO("123")
 
 
-//----  Alert提示宏定义
+// MARK: - Alert提示宏定义
 #define kAlert(_S_, ...)        [[[UIAlertView alloc] initWithTitle:@"提示" \
                                                             message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil \
                                                   cancelButtonTitle:@"确定" \
                                                   otherButtonTitles:nil] show]
 
 
-//----  宏定义检测block是否可用
+// MARK: - 宏定义检测block是否可用
 #define BLOCK_EXEC(block, ...)  if (block) { block(__VA_ARGS__); };
 /*
  // 宏定义之前的用法
